@@ -1,10 +1,20 @@
 import React from 'react';
 import {View, Text} from 'react-native';
 
-const SharedAlbumScreen = () => {
+import ImageCard from '../components/ImageCard';
+import People from '../components/People';
+
+import albumsData from '../data/album-page';
+
+const SharedAlbumScreen = ({route}) => {
+  const id = route.params.id;
+  const album = albumsData.find(a => a.id === id);
+
   return (
     <View>
-      <Text>This is SharedAlbumScreen.</Text>
+      <ImageCard {...album} />
+
+      <People people={album.avatars} />
     </View>
   );
 };
