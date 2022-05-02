@@ -42,43 +42,7 @@ const backgroundImages = [
     background: image8,
   },
   {
-    id: 8,
-    background: image9,
-  },
-  {
     id: 9,
-    background: image1,
-  },
-  {
-    id: 10,
-    background: image2,
-  },
-  {
-    id: 11,
-    background: image3,
-  },
-  {
-    id: 12,
-    background: image4,
-  },
-  {
-    id: 13,
-    background: image5,
-  },
-  {
-    id: 14,
-    background: image6,
-  },
-  {
-    id: 15,
-    background: image7,
-  },
-  {
-    id: 16,
-    background: image8,
-  },
-  {
-    id: 17,
     background: image9,
   },
 ];
