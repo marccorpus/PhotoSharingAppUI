@@ -1,11 +1,13 @@
 import React, {useLayoutEffect, useRef} from 'react';
-import {StyleSheet, Alert, Pressable, View, Text} from 'react-native';
+import {StyleSheet, Alert, Pressable, View} from 'react-native';
 import BottomSheet from 'react-native-gesture-bottom-sheet';
 
 import IconButton from '../components/IconButton';
 import Button from '../components/Button';
+import AlbumList from '../components/AlbumList';
 
 import theme from '../theme';
+import albumsData from '../data/album-page';
 
 const AlbumsScreen = ({navigation}) => {
   const bottomSheet = useRef();
@@ -39,7 +41,7 @@ const AlbumsScreen = ({navigation}) => {
 
   return (
     <View>
-      <Text>This is AlbumsScreen.</Text>
+      <AlbumList data={albumsData} />
 
       <BottomSheet
         hasDraggableIcon
@@ -73,9 +75,8 @@ const styles = StyleSheet.create({
     opacity: 0.75,
   },
   actionContainer: {
-    flex: 1,
+    marginTop: 16,
     marginHorizontal: 16,
-    justifyContent: 'center',
   },
   button: {
     marginVertical: 8,

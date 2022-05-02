@@ -171,7 +171,7 @@ const albumPage = [
     ],
   },
   {
-    id: 8,
+    id: 9,
     title: 'Cars',
     user: 'Claire',
     background: image9,
